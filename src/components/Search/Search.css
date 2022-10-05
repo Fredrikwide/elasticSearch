@@ -1,0 +1,135 @@
+.product-search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  max-width: 100%;
+  height: 4rem;
+  padding: 0 1rem;
+}
+
+.product-search-input {
+  height: 2rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+}
+input {
+  padding-left: 0.4rem;
+}
+.product-search-input:focus {
+  outline: none;
+  border: 1px solid #000;
+}
+.product-search-input::placeholder {
+  color: #ccc;
+}
+
+.product-search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 2rem;
+  margin-left: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #5cdb5c;
+  cursor: pointer;
+}
+
+.product-search-button-text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2px;
+}
+
+.product-search-suggestions {
+  position: absolute;
+  top: 91px;
+  height: auto;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0.4rem 1rem;
+  z-index: 2;
+}
+
+.product-search-suggestions-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-search-suggestions-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.25rem;
+  margin-bottom: 0.2rem;
+  padding: 1rem;
+  background-color: #5cdb5c;
+  cursor: pointer;
+}
+.product-search-suggestions-item:hover {
+  background-color: #ccc;
+}
+
+.product-search-suggestions-text {
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #000;
+  padding: 0.1rem;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.product-search-clear-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 2rem;
+  margin-left: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+.product-search-clear-button:hover {
+  background-color: #ccc;
+}
+
+.product-search-clear-button-text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  padding: 1rem;
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .product-search-clear-button {
+    display: none;
+  }
+  
+}

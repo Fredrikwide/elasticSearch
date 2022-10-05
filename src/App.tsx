@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+//React
+import { ReactElement, FC as FunctionalComponent } from 'react';
+//styles
 import './App.css';
+//components
+import { Header } from './components/Header/Header';
+import { Search } from './components/Search/Search';
+import { Grid } from './components/Grid/Grid';
+//interfaces/types
 
-function App() {
+export const App: FunctionalComponent = (): ReactElement => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        {
+          <>
+            <Header />
+            <Search />
+            <Grid />
+          </>
+        }
+      </div>
+    </>
   );
 }
-
-export default App;
